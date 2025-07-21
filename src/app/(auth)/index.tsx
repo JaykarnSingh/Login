@@ -53,7 +53,7 @@ const Auth = () => {
             styles.inputWrapper,
             isPasswordFocused && { borderColor: "#EB3E6F" },
           ]}
-        >
+        >  
           <FontAwesome
             name="lock"
             size={25}
@@ -119,7 +119,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 50,
-
     backgroundColor: "white",
     gap: 25,
   },
@@ -154,7 +153,7 @@ const styles = StyleSheet.create({
   },
   label: {
     color: "#EB3E6F",
-    marginBottom: 5,
+    marginBottom: 15,
     fontWeight: "bold",
   },
 
