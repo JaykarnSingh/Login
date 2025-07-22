@@ -9,7 +9,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import ButtonComp from "../../components/atoms/buttonComp";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Cards from '../../components/atoms/card';
-
+   
 const Application_Process = () => {
   return (
     <SafeAreaView style={styles.container}>
