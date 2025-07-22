@@ -1,14 +1,11 @@
 
 import { Redirect, Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import React, { useEffect , useState} from 'react';
+import React, { useEffect } from 'react';
 
 SplashScreen.preventAutoHideAsync();
 const RootLayout = () => {
   
- 
-
-
   useEffect(()=>{
     setTimeout(()=>{
     SplashScreen.hideAsync();
@@ -18,9 +15,7 @@ const RootLayout = () => {
   return (
     <>
     <Stack screenOptions={{headerShown:false}}/>
-   
     <Redirect href={"./(auth)"}/>
- 
     </>
   )
 }

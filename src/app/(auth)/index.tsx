@@ -10,8 +10,8 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import ButtonComp from "../../components/atoms/buttonComp";
 import imagePath from "@/src/constants/imagePath";
-import AntDesign from "react-native-vector-icons/AntDesign";
 import { FontAwesome } from "@expo/vector-icons";
+import IconsComp from '../../components/atoms/iconsComp';
 
 const Auth = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -89,20 +89,8 @@ const Auth = () => {
         <View style={styles.line} />
       </View>
 
-      <View style={styles.iconContainer}>
-        <TouchableOpacity style={styles.iconBox}>
-          <AntDesign name="google" size={24} color="#DB4437" />
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.iconBox}>
-          <FontAwesome name="facebook" size={24} color="#4267B2" />
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.iconBox}>
-          <FontAwesome name="apple" size={24} color="#000000" />
-        </TouchableOpacity>
-      </View>
-
+          <IconsComp/>
+       
       <TouchableOpacity>
         <Text style={styles.newHere}>New here?</Text>
       </TouchableOpacity>
