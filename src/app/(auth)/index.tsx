@@ -12,11 +12,16 @@ import ButtonComp from "../../components/atoms/buttonComp";
 import imagePath from "@/src/constants/imagePath";
 import { FontAwesome } from "@expo/vector-icons";
 import IconsComp from '../../components/atoms/iconsComp';
+import { router } from 'expo-router';
 
 const Auth = () => {
   const [showPassword, setShowPassword] = React.useState(false);
   const [isEmailFocused, setIsEmailFocused] = React.useState(false);
   const [isPasswordFocused, setIsPasswordFocused] = React.useState(false);
+
+   let application_process=()=>{
+    router.push("/application_process")
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -81,7 +86,7 @@ const Auth = () => {
         </TouchableOpacity>
       </View>
 
-      <ButtonComp title="LOG IN" style={styles.login_button} />
+      <ButtonComp title="LOG IN" style={styles.login_button} onPress={application_process}/>
 
       <View style={styles.orContainer}>
         <View style={styles.line} />
