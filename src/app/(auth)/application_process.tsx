@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     color: "#222",
   },
   stepSubtitle: {
-    fontSize: 13,
+    fontSize: 12,
     color: "#555",
   },
   docRow: {
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   dateText: {
-    fontSize: 13,
+    fontSize: 12,
     color: "#666",
   },
   important_date: {
