@@ -20,7 +20,7 @@ const Auth = () => {
   const [isPasswordFocused, setIsPasswordFocused] = React.useState(false);
 
    let application_process=()=>{
-    router.push("/application_process")
+    router.push("/(main)/application_process")
   }
 
   return (
